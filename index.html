@@ -352,21 +352,23 @@
                 <div class="row">
                     <div class="col-md-7">
                         <h3>send Message</h3>
-                        <form action="#">
+                        <form method="post" action="contact.php">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter name..">
+                                <input type="text" name='name' class="form-control" placeholder="Enter name..">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter email..">
+                                <input type="text" name='email' class="form-control" placeholder="Enter email..">
                             </div>
                             <div class="form-group">
                                 <textarea 
+                                name="comment" 
                                 cols="30" 
-                                rows="10" 
+                                rows="10"
                                 class="form-control col-12"
-                                placeholder="Message.."></textarea>
+                                placeholder="Message.."
+                                ></textarea>                
                             </div>
-                            <input type="button" class="btn btn-info" value="Submit">
+                            <input type="submit" name="submit" class="btn btn-info" value="Submit">
                         </form> 
                     </div>
                     <div class="col-md-5">
