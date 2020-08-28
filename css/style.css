@@ -328,6 +328,9 @@ img {
     .services-content .card {
         width: 50%;
     }
+    .services .card .icon {
+        top: 30%;
+    }
 }
 /* ---------- End of Services ---------- */
 
