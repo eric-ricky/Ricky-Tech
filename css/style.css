@@ -112,18 +112,18 @@ img {
 .navbar {
     margin-bottom: 0;
     border-bottom: 1px solid #303030;
-    background-color: rgba(0, 9, 26, 0.938) !important;
+    background-color: #002447 !important;
 }
 .navbar .navbar-brand {
     font-size: 2rem;
     font-weight: bolder;
-    color: aqua;
+    color: rgb(6, 212, 248);
     font-family: fantasy;
 }
 .navbar-brand span {
     font-style: italic;
     font-weight: bolder;
-    color: #15f501;
+    color: #ff8800;
 }
 .navbar button {
     outline: 0em;
