@@ -71,34 +71,15 @@ img {
 
 /* ---------- Mini Header ---------- */
 .mini-header {
-    background: var(--mainGrey);
-    padding-top: 0.1rem ;
-    padding-bottom: 0.1rem ;
-}
-.mini-header .container {
-    display: flex;
-    justify-content: space-between;
+    background: #3a4349;
+    color: #ffffff;
 }
 .mini-header .container .left {
     display: flex;
 }
-.left .first {
+.mini-header .container .left .first {
     display: flex;
-    text-align: center;
-    margin-right: 0.3rem;
-    padding-right: 0.3rem;
-    padding-left: 0.3rem;
-    border-right: 1px solid #575656;
-    margin-top: auto;
-}
-.left .first i {
-    margin-right: 0.3rem;
-}
-.right .fa {
-    font-size: 1.5rem;
-    margin-right: 0.7rem;
-    border-right: 1px solid #575656;
-    padding-right: 1.5rem;
+    margin-left: 2rem;
 }
 @media only screen and (max-width : 760px) {
     .mini-header {
@@ -112,27 +93,25 @@ img {
 .navbar {
     margin-bottom: 0;
     border-bottom: 1px solid #303030;
-    background-color: #002447 !important;
+    background-color: #ffffff !important;
 }
-.navbar .navbar-brand {
-    font-size: 2rem;
-    font-weight: bolder;
-    color: rgb(6, 212, 248);
-    font-family: fantasy;
-}
-.navbar-brand span {
-    font-style: italic;
-    font-weight: bolder;
-    color: #ff8800;
+.navbar .navbar-brand img{
+    width: 30%;
+    float: left;
 }
 .navbar button {
     outline: 0em;
     border: 0;
 }
+.navbar-toggler {
+    margin-left: auto;
+    margin-top: 0 !important;
+    
+}
 .navbar-toggler .btn-line {
     width: 2rem;
     height: .3rem;
-    background-color:var(--mainWhite);
+    background-color:var(--mainBlack);
     margin: 0 0 .2rem 0;
     transition: all 1000ms;
 }
@@ -140,7 +119,7 @@ img {
     margin-right: 1rem;
 }
 .navbar li a {
-    color: var(--mainWhite);
+    color: var(--mainBlack);
     font-size: 0.9rem;
     letter-spacing: 4px;
     font-weight: 900;
@@ -153,9 +132,13 @@ img {
     color: aqua;
 }
 @media only screen and (max-width:760px) {
-    .navbar .navbar-brand {
-        font-size: 1.2rem;
+    .navbar-brand {
+        margin-left: auto;
     }
+    .navbar-brand img {
+        width: 100% !important;
+    }
+    
 }
 /* ---------- End of Navigation ---------- */
 /* .btn {
@@ -180,12 +163,13 @@ img {
 .jumbotron {
     margin-top: 0;
     border-radius: 0%;
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
     url('https://images.pexels.com/photos/219692/pexels-photo-219692.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     font-family: Montserrat, sans-serif;
     position: relative;
@@ -226,6 +210,9 @@ img {
     color: var(--mainWhite);
 }
 @media only screen and (max-width:760px) {
+    .jumbotron {
+        height: 100vh;
+    }
     .jumbotron .showcase-content h2 {
         font-size: 2rem;
     }
@@ -270,7 +257,7 @@ img {
 /* ---------- Action ---------- */
 .action {
     padding: 2rem;
-    background: #002447;
+    background-image: linear-gradient(100deg,#f26798 0%,#3023ae 100%);
     color: var(--mainWhite);
 }
 .action h5 {
@@ -309,6 +296,9 @@ img {
 }
 .card:hover img {
     transform: scale(1.5);    
+}
+.card:hover .icon {
+    color: blue;
 }
 .services .card .icon {
     position: absolute;
