@@ -26,6 +26,17 @@ $(window).ready(function() {
         });
     });
 
+    // Remove logo for small screen on scroll
+    var logoItem = document.getElementsByClassName("navbar-brand");
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 100){
+            // console.log(logoItem);
+            $(".navbar-brand").addClass("remove-brand");
+        }else {
+            $(".navbar-brand").removeClass("remove-brand");
+        }            
+    });
+
     // FORM SUBMITTED TOAST
     $('#myBtn').click(function() {
         $('.toast').toast(show);

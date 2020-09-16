@@ -138,6 +138,9 @@ img {
     .navbar-brand img {
         width: 100% !important;
     }
+    .navbar-brand.remove-brand {
+        display: none;
+    }
     
 }
 /* ---------- End of Navigation ---------- */
